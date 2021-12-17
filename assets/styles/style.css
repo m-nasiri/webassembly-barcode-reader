@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --start-bg-gradient: #3498db;
+  --end-bg-gradient: #2c3e50;
+  --main-primary: #93f5fd;
+  --second-primary: #2c3e50;
+}
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg__wrapper {
+  background: var(--end-bg-gradient); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    var(--start-bg-gradient),
+    var(--end-bg-gradient)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    var(--start-bg-gradient),
+    var(--end-bg-gradient)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  min-height: 100vh;
+  width: 100%;
+}
+
+.barcode__header .barcode__menu {
+  list-style: none;
+  display: flex;
+  padding-top: 20px;
+}
+
+.barcode__header .barcode__menu .barcode__menu--item {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.barcode__header .barcode__menu .barcode__menu--item:first-child {
+  margin-left: 0;
+}
+
+.barcode__header .barcode__menu .barcode__menu--item a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.barcode__header .barcode__menu .barcode__menu--item.active a {
+  font-weight: bold;
+}
+
+.barcode__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 600px;
+}
+
+.barcode__title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--main-primary);
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.barcode__description {
+  font-size: 1.1rem;
+  color: #fff;
+  max-width: 90%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.barcode__sccaner {
+  position: relative;
+}
+
+.barcode__scanner {
+  max-width: 90%;
+  margin: 30px auto 10px;
+}
+
+.barcode__scanner .btn-process {
+  background-color: var(--main-primary);
+  color: var(--second-primary)
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.barcode__scanner .form-label {
+  color: var(--main-primary);
+}
+
+.barcode__scanner > .row > .col {
+  transition: all 0.2s ease-in-out;
+}
+
+.barcode__preview {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}
+
+.social__menu {
+  list-style: none;
+  display: flex;
+}
+
+.social__menu .social__menu--item {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.social__menu .social__menu--item a {
+  color: var(--main-primary);
+}
+
+.social__menu .social__menu--item:first-child {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .barcode__title {
+    margin-top: 3rem;
+  }
+
+  .barcode__scanner {
+    margin: 80px auto 10px;
+  }
+}
+
+.swal2-confirm.swal2-styled {
+  width: 300px;
+  color: var(--main-primary) !important;
+  background-color: var(--second-primary) !important;
+  box-shadow: none !important;
+}
