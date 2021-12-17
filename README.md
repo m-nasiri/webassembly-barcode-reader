@@ -1,6 +1,5 @@
 # webassembly-barcode-reader
 
-<<<<<<< HEAD
 It was originally ported from the ZXing-C++ Library. It is compiled to WebAssembly and loaded in html static page. It can detect most barcode formats and recognize them correctly.
 
 There are two methods for running this project:
@@ -37,9 +36,8 @@ docker run --rm --name barcode -p 7000:7000 -d barcode-reader
 ## Open webpage
 
 you will be able to access the barcode webpage in port 7000 (http://localhost:7000/)
-=======
+
 ```sh
 docker build -t barcode-reader .  
 docker run --rm --name barcode -p 7000:7000 -d barcode-reader 
 ```
->>>>>>> 80b96804256153889c072e61e0263ae1f05d3f35
