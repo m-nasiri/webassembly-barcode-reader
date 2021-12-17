@@ -36,8 +36,3 @@ docker run --rm --name barcode -p 7000:7000 -d barcode-reader
 ## Open webpage
 
 you will be able to access the barcode webpage in port 7000 (http://localhost:7000/)
-
-```sh
-docker build -t barcode-reader .  
-docker run --rm --name barcode -p 7000:7000 -d barcode-reader 
-```
